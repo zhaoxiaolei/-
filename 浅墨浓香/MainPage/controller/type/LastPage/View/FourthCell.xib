@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="157" id="KGk-i7-Jjw" customClass="FourthCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="157"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你也许还会喜欢" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWi-Tc-jja">
+                        <rect key="frame" x="8" y="6" width="91" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="bXj-98-0eJ"/>
+                            <constraint firstAttribute="width" constant="91" id="cHN-2J-M30"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOz-68-TnM">
+                        <rect key="frame" x="0.0" y="30" width="320" height="126"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="126" id="ULW-Yj-55y"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HWi-Tc-jja" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="66b-qd-Wyp"/>
+                    <constraint firstItem="HWi-Tc-jja" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="MDP-IT-4u6"/>
+                    <constraint firstItem="jOz-68-TnM" firstAttribute="top" secondItem="HWi-Tc-jja" secondAttribute="bottom" constant="8" id="NFg-z4-71J"/>
+                    <constraint firstAttribute="bottom" secondItem="jOz-68-TnM" secondAttribute="bottom" id="Rl3-Yt-KJD"/>
+                    <constraint firstAttribute="trailing" secondItem="jOz-68-TnM" secondAttribute="trailing" id="i0B-v0-y53"/>
+                    <constraint firstAttribute="centerX" secondItem="jOz-68-TnM" secondAttribute="centerX" id="iUL-mO-wVm"/>
+                    <constraint firstItem="jOz-68-TnM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yax-5C-bh1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backScroll" destination="jOz-68-TnM" id="VhG-wb-Wpw"/>
+            </connections>
+            <point key="canvasLocation" x="288" y="353.5"/>
+        </tableViewCell>
+    </objects>
+</document>
